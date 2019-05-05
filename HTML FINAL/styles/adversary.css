@@ -1,0 +1,165 @@
+ article, aside, figure, footer, header, nav, section {
+    display: block;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+ }
+
+ html {
+	background-image: url("../images/background-lighting.jpg");
+	}
+
+body {
+	font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, serif;
+	width: 800px;
+	background-color: black;
+	border: 2px solid black;
+	box-shadow: 5px 5px 8px black;
+	margin:0 auto; 
+	}
+
+header {
+	padding: 10px;
+	border-bottom: 2px solid black;
+	text-align: center;
+	height: 200px;
+	background-image: url("../images/mjolnir.jpg");
+	background-size: 796px 200px;
+}
+header h2, h3 {
+	color:white;
+	font-weight: bold;
+}
+
+#Asgard ul {	
+	padding: 0;
+	margin:0;
+	list-style: none;
+	position: relative;
+}
+#Asgard ul li {	
+	display: inline;
+	float: left;
+	padding: 0;
+	width: 25%; 
+}
+
+#Asgard a {	
+	display:block; 	
+	text-align:center; 
+	padding-top: 1em; 
+	padding-bottom: 1em; 
+	text-decoration:none; 
+	background-color: black; 
+	color:white; 
+	font-weight:bold;
+} 
+#Asgard a:hover{
+	background-color: blue;
+}
+#Asgard ul ul{	
+	display: none;
+	position:absolute;
+	width:inherit;
+	float:left;
+}
+#Asgard  ul ul li {
+	float:none;
+}
+
+#Asgard > ul::after {
+	content: "";
+	display: block;
+	clear: both; 
+}
+
+
+
+#sucks {
+	padding-top: 10px;
+	float: right;
+	padding-bottom: 2px;
+	padding-right: 10px;
+}
+
+main {
+	height: 1050px;
+	background-color: black;
+
+}
+#weak_cap {
+	padding: 10px;
+	float: left;
+	width:300px;
+	clear: none;
+	display: block;
+}
+
+#sec1 {
+	height: 700px;
+	background-color: black;
+	border: .5px solid black;
+}
+#sec1 h2, h3 {
+	color: white;
+	align-content: center;
+	
+	
+
+}
+#sec1 p {
+	color: white;
+	padding: 2em;
+	
+}
+
+#sec2 {
+	height: 300px;
+}
+
+#sec2 p {
+	color: white;
+	padding: 2em;
+}
+
+
+
+table {
+	border: 2px solid white;
+	width: 40%;
+	color: white;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 1em;
+
+
+}
+
+table, th, td {
+	border: 1px solid white;
+	text-align: center;
+	
+}
+
+footer {
+	font-size: 75%;
+	text-align: center;
+	border-top: 2px solid white;
+	background-color: black;
+	padding: 6px 0;
+	clear: both;
+	}
+
+footer p{
+	color: white;
+}
+
+@media print {
+	body {
+		background-color: white;
+		
+	}
+}
